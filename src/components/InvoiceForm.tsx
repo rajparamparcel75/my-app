@@ -15,7 +15,7 @@ export default function InvoiceForm({ onGenerate }: InvoiceFormProps) {
     vehicleNumber: '',
     placeOfSupply: '24-Gujarat',
     seller: {
-      name: 'MAHARAJA PARCEL&PRODUCT',
+      name: 'RAJPARAM PARCEL & PRODUCTS',
       address: 'GROUND FLOOR 144 AMRUT UDHYOGNAGAR-1 KHOLVAD, KAMREJ SURAT',
       phone: '9638877605',
       gstin: '24ASCPM8200A1ZG',
@@ -23,7 +23,7 @@ export default function InvoiceForm({ onGenerate }: InvoiceFormProps) {
       stateCode: '24',
     },
     buyer: {
-      name: 'R K TRADERS',
+      name: 'MJ TRADERS',
       billToAddress: 'L S No. 825 Gokul Rice Mill Rajoda BAVLA',
       shipToAddress: 'LS NO 825 GOKUL RICE MILL RAJODA BAVLA',
       contactNo: '9925561448',
@@ -33,7 +33,7 @@ export default function InvoiceForm({ onGenerate }: InvoiceFormProps) {
     },
     items: [
       {
-        itemName: 'MAHARAJA PARCEL (LIME)',
+        itemName: 'RAJPARAM PARCEL (LIME)',
         hsnSac: '3206',
         quantity: 2500,
         unit: 'Nos',
@@ -45,7 +45,7 @@ export default function InvoiceForm({ onGenerate }: InvoiceFormProps) {
       bankName: 'HDFC BANK, PUNA KUMBHARIA',
       accountNo: '50200044551807',
       ifscCode: 'HDFC0001704',
-      accountHolderName: 'MAHARAJA PARCEL&PRODUCT',
+      accountHolderName: 'RAJPARAM PARCEL & PRODUCTS',
     },
     termsAndConditions: 'Thanks for doing business with us!',
   });
