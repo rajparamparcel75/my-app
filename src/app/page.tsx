@@ -3,10 +3,12 @@
 import { useState } from 'react';
 import InvoiceForm from '@/components/InvoiceForm';
 import InvoiceDisplay from '@/components/InvoiceDisplay';
+import PasswordProtection from '@/components/PasswordProtection';
+import LogoutButton from '@/components/LogoutButton';
 import { InvoiceData, CalculatedInvoice } from '@/types/invoice';
 import { calculateInvoice } from '@/utils/calculations';
 
-export default function Home() {
+function InvoiceApp() {
   const [invoice, setInvoice] = useState<CalculatedInvoice | null>(null);
   const [showForm, setShowForm] = useState(true);
 
@@ -25,8 +27,11 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen  py-8">
+    <div className="min-h-screen py-8">
       <div className="container mx-auto">
+        <div className="mb-4 flex justify-end print:hidden">
+          <LogoutButton />
+        </div>
         {showForm ? (
           <div>
             <InvoiceForm onGenerate={handleGenerate} />
@@ -52,5 +57,13 @@ export default function Home() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <PasswordProtection>
+      <InvoiceApp />
+    </PasswordProtection>
   );
 }

@@ -32,7 +32,7 @@ body {
   }
   
   @page {
-    margin: 1cm;
+    margin: 0;
     size: A4;
   }
   
